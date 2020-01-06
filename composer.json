@@ -13,7 +13,8 @@
             "index-document": "index.php",
             "php-config": [
                 "short_open_tag=on",
-                "date.timezone=Europe/Vienna"
+                "date.timezone=Europe/Vienna",
+                "newrelic.appname=php-test"
             ],
             "engines": {
                 "php": "7.1.*",
@@ -22,6 +23,7 @@
             "compile": [
                 "echo $FOO"
             ],
+            "newrelic": true
         }
     }
 }
